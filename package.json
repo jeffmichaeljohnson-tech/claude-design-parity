@@ -1,0 +1,45 @@
+{
+  "name": "claude-design-parity",
+  "version": "0.1.0",
+  "description": "Claude Code skill that ports Claude Design prototypes into your real codebase, with Playwright-verified visual fidelity.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "parity:diff": "node scripts/parity-screenshot-diff.mjs",
+    "test": "node --test tests/smoke.test.mjs",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "postinstall": "playwright install chromium"
+  },
+  "dependencies": {
+    "pixelmatch": "^7.1.0",
+    "playwright": "^1.49.0",
+    "pngjs": "^7.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.15.0",
+    "prettier": "^3.4.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "author": "Jeff Michael Johnson",
+  "keywords": [
+    "claude-code",
+    "claude-code-skill",
+    "claude-design",
+    "design-parity",
+    "visual-regression",
+    "playwright"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffmichaeljohnson-tech/claude-design-parity.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jeffmichaeljohnson-tech/claude-design-parity/issues"
+  },
+  "homepage": "https://github.com/jeffmichaeljohnson-tech/claude-design-parity#readme"
+}

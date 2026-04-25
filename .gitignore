@@ -1,0 +1,7 @@
+node_modules/
+.design-snapshot/
+docs/design/specs/
+docs/design/handoffs/
+tests/.tmp/
+*.log
+.DS_Store
