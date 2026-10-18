@@ -5,3 +5,16 @@ docs/design/handoffs/
 tests/.tmp/
 *.log
 .DS_Store
+
+# --- Secrets: kept in the repository so the rules travel with every clone ---
+# A bare `.env` matches only that exact name; the patterns below cover its variants.
+.env*
+!.env.example
+!.env.*.example
+!.env.template
+!.envrc
+*.pem
+*.key
+*.p8
+secrets/
+.claude/settings.local.json
